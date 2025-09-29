@@ -1,4 +1,5 @@
-body {
+body 
+{
   background: #f8f4ef;
   display: flex;
   justify-content: center;
@@ -9,7 +10,8 @@ body {
   padding: 0;
 }
 
-.card {
+.card 
+{
   max-width: 350px;
   background: #fff;
   border-radius: 16px;
@@ -17,12 +19,14 @@ body {
   overflow: hidden;
 }
 
-.card__image {
+.card__image 
+{
   width: 100%;
   overflow: hidden;
 }
 
-.card__image .grid {
+.card__image .grid 
+{
   display: grid;
   grid-template-columns: repeat(5, 70px);
   grid-auto-rows: 70px;
@@ -31,7 +35,8 @@ body {
   align-items: start;
 }
 
-.card__image .grid > div {
+.card__image .grid > div 
+{
   width: 70px;
   height: 70px;
 }
@@ -43,18 +48,21 @@ body {
 .yellow-block,
 .pink-dots-block,
 .white-g-block,
-.white-g-block-inverted {
+.white-g-block-inverted 
+{
   width: 70px;
   height: 70px;
   position: relative;
   overflow: hidden;
 }
 
-.wave-block {
+.wave-block 
+{
   background: #fddca4;
 }
 
-.wave-block::before {
+.wave-block::before 
+{
   content: "";
   position: absolute;
   top: 0;
@@ -71,11 +79,13 @@ body {
   background-size: 140px 100%;
 }
 
-.blue-block {
+.blue-block 
+{
   background: #4361ee;
 }
 
-.blue-block.first::before {
+.blue-block.first::before 
+{
   content: "";
   position: absolute;
   top: -15px;
@@ -86,12 +96,14 @@ body {
   border-radius: 50%;
 }
 
-.white-block {
+.white-block 
+{
   background: #ffffff;
   border: 1px solid #eee;
 }
 
-.white-block::before {
+.white-block::before 
+{
   content: "";
   position: absolute;
   left: -4px;
@@ -104,29 +116,34 @@ body {
   transform-origin: top left;
 }
 
-.pink-block {
+.pink-block 
+{
   background: #d598a3;
 }
 
-.yellow-block {
+.yellow-block 
+{
   background: #fddca4;
 }
 
-.pink-dots-block {
+.pink-dots-block 
+{
   background: #d598a3; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.dot {
+.dot 
+{
   width: 35px;
   height: 35px;
   background: #4361ee;
   border-radius: 50%;
 }
 
-.white-g-block::before {
+.white-g-block::before 
+{
   content: "";
   position: absolute;
   top: 0;
@@ -138,7 +155,8 @@ body {
   box-sizing: border-box;
 }
 
-.white-g-block-inverted::before {
+.white-g-block-inverted::before 
+{
   content: "";
   position: absolute;
   top: 0;
@@ -161,14 +179,16 @@ body {
 .row4-col4 { grid-column:4; grid-row:3; }
 .row5-col1 { grid-column:5; grid-row:3; }
 
-.card__body {
+.card__body 
+{
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.card__tag {
+.card__tag 
+{
   display: inline-block;
   background: #fff7d6;
   color: #333;
@@ -178,44 +198,52 @@ body {
   font-weight: bold;
 }
 
-.card__date {
+.card__date 
+{
   font-size: 12px;
   color: #666;
 }
 
-.card__title {
+.card__title 
+{
   font-size: 20px;
   margin: 0;
 }
 
-.card__description {
+.card__description 
+{
   font-size: 14px;
   color: #333;
 }
 
-.card__author {
+.card__author 
+{
   display: flex;
   align-items: center;
   gap: 8px;
   margin-top: 10px;
 }
 
-.card__avatar {
+.card__avatar 
+{
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
 
-.card__name {
+.card__name 
+{
   font-size: 14px;
   color: #333;
 }
 
-.grid, .wave-block::before, .dot {
+.grid, .wave-block::before, .dot 
+{
   transition: all 0.4s ease-in-out;
 }
 
-@keyframes wave-animation {
+@keyframes wave-animation 
+{
   0% {
     transform: translateX(0);
   }
@@ -224,15 +252,18 @@ body {
   }
 }
 
-.card__image:hover .grid {
+.card__image:hover .grid 
+{
   transform: scale(1.05);
 }
 
-.card__image:hover .wave-block::before {
+.card__image:hover .wave-block::before 
+{
   animation: wave-animation 1.5s infinite linear;
 }
 
-.card__image:hover .dot {
+.card__image:hover .dot 
+{
   transform: scale(1.1);
   background: #fddca4;
 }
